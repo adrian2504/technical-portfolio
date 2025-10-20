@@ -1,0 +1,9 @@
+# Amazon Q Developer configurations and todo lists
+.amazonq/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
