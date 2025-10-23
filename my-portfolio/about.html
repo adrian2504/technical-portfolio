@@ -12,7 +12,7 @@
             <div class="logo">Kandyce Bohannon</div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="she-builds-episodes.html">AWS She Builds</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -34,9 +34,9 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <h2>My Journey</h2>
-                        <p>I'm a Specialist Solutions Architect at AWS, currently working on Amazon Q Developer and Kiro. My passion lies in "greasing the skids" for developers and ML teams by focusing on MLOps and serverless applications that make building and deploying solutions faster and more reliable.</p>
+                        <p>As a Specialist Solutions Architect at AWS, I help developers and ML teams move faster by "greasing the skids" through MLOps and serverless solutions that streamline building and deployment. Currently working on Amazon Q Developer and Kiro, I focus on removing friction so teams can ship reliable solutions with confidence.</p>
                         
-                        <p>With 15+ years of experience spanning engineering and architecture roles, I've had the privilege of working across diverse industries—from healthcare and life sciences to retail—always with a focus on solving complex technical challenges and enabling teams to build better.</p>
+                        <p>With 15+ years of experience spanning engineering and architecture roles, I've tackled complex challenges spanning healthcare compliance requirements to retail scale demands. My drive is simple: enable teams to build better while reducing the complexity that slows them down.</p>
 
                         <h3>Career Progression</h3>
                         <div class="career-timeline">
@@ -48,30 +48,30 @@
                                 </div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-year">2023-2024</div>
+                                <div class="timeline-year">2024</div>
                                 <div class="timeline-content">
                                     <h4>Product Solutions Architect - AWS</h4>
                                     <p>Healthcare & Life Sciences - Clinical trial space, regulatory compliance, and data platforms</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-year">2020-2023</div>
+                                <div class="timeline-year">2021-2023</div>
                                 <div class="timeline-content">
                                     <h4>Account Solutions Architect - AWS</h4>
                                     <p>Retail space - Cloud architecture and digital transformation initiatives</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-year">2018-2020</div>
+                                <div class="timeline-year">2020-2021</div>
                                 <div class="timeline-content">
                                     <h4>Principal DevOps Engineer - Medtronic</h4>
                                     <p>Leading DevOps practices and automation in healthcare technology</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-year">2008-2018</div>
+                                <div class="timeline-year">2010-2020</div>
                                 <div class="timeline-content">
-                                    <h4>Various Engineering Roles - 3M</h4>
+                                    <h4>Various Roles in Engineering, Architecture, and Technical Leadership - 3M</h4>
                                     <p>10 years building technical expertise across multiple domains</p>
                                 </div>
                             </div>
@@ -88,8 +88,7 @@
                     
                     <div class="about-sidebar">
                         <div class="profile-image">
-                            <img src="https://via.placeholder.com/300x300" alt="Kandyce Bohannon" />
-                            <p class="image-note">Professional photo placeholder</p>
+                            <img src="images/me-2.jpg" alt="Kandyce Bohannon" />
                         </div>
                         
                         <div class="tech-stack">
@@ -118,6 +117,28 @@
                                 <li>AI-powered development tools</li>
                                 <li>Developer productivity</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="speaking-section">
+            <div class="container">
+                <h2>Speaking & Community</h2>
+                <div class="speaking-grid">
+                    <div class="speaking-feature">
+                        <img src="images/me-speaking.jpg" alt="Speaking at re:Invent on Bias Detection in LLMOps" />
+                        <p class="photo-caption">Speaking at AWS re:Invent on "Bias detection in LLMOps: Embedding ID&E into LLM lifecycles"</p>
+                    </div>
+                    <div class="aws-photos-grid">
+                        <div class="aws-photo">
+                            <img src="images/me-spheres.jpg" alt="At the Amazon Spheres in Seattle" />
+                            <p class="photo-caption">At the Amazon Spheres, Seattle</p>
+                        </div>
+                        <div class="aws-photo">
+                            <img src="images/aws-event.jpg" alt="At AWS Think Big event" />
+                            <p class="photo-caption">AWS Think Big event</p>
                         </div>
                     </div>
                 </div>
@@ -296,6 +317,63 @@
             .timeline-item {
                 grid-template-columns: 1fr;
                 gap: 0.5rem;
+            }
+        }
+
+        .speaking-section {
+            background: #f8fafc;
+            padding: 80px 0;
+        }
+
+        .speaking-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1e293b;
+            text-align: center;
+        }
+
+        .speaking-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .speaking-feature {
+            text-align: center;
+        }
+
+        .speaking-feature img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .aws-photos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .aws-photo {
+            text-align: center;
+        }
+
+        .aws-photo img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .photo-caption {
+            margin-top: 1rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .aws-photos-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
