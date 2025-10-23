@@ -78,7 +78,7 @@
                     
                     <div class="contact-form">
                         <h2>Send a Message</h2>
-                        <form action="#" method="POST">
+                        <form action="https://formspree.io/f/mldpqrdy" method="POST">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name" required>
@@ -107,10 +107,11 @@
                                 <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or how we might collaborate..."></textarea>
                             </div>
                             
+                            <!-- Formspree honeypot field for spam protection -->
+                            <input type="text" name="_gotcha" style="display:none" />
+                            
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
-                        
-                        <p class="form-note">Note: This form requires backend integration. Consider using Formspree, Netlify Forms, or AWS SES for production deployment.</p>
                     </div>
                 </div>
             </div>
