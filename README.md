@@ -6,7 +6,7 @@ This repository contains materials for a 90-minute workshop teaching participant
 ```
 technical-portfolio/
 ├── README.md                           # This file
-├── my-portfolio/                       # Working example portfolio (instructor's)
+├── instructor-example/                 # Instructor's completed portfolio (reference)
 │   ├── index.html
 │   ├── about.html
 │   ├── projects.html
@@ -22,9 +22,9 @@ technical-portfolio/
 │   ├── contact.html
 │   └── styles.css
 └── workshop-materials/                 # Workshop guides and resources
-    ├── WORKSHOP-DELIVERY-GUIDE.md     # Main 90-minute workshop plan
-    ├── PRE-WORKSHOP-CHECKLIST.md      # What participants need to bring
-    ├── Q-PORTFOLIO-PROMPT.md          # Q Developer master prompt
+    ├── WORKSHOP-DELIVERY-GUIDE.md     # Instructor guide with timeline
+    ├── PARTICIPANT-GUIDE.md           # Participant reference guide
+    ├── AI-ENHANCEMENT-GUIDE.md        # AI prompts for Phase 2
     └── q-developer-rules/             # Q Developer workflow rules
         └── portfolio-workflow.md
 ```
@@ -35,33 +35,35 @@ technical-portfolio/
 **Target Audience:** Early career technologists (All Builders Welcome grant recipients)  
 **Goal:** Every participant leaves with a working 3-page portfolio
 
-### Workshop Approach
+### Workshop Approach: "Everyone Together, Then Diverge"
 
-**Single Path with Optional Enhancements:**
-- Everyone starts with local development (templates + text editor)
-- **Q Developer users:** Can enhance content with AI generation
-- **GitHub users:** Can deploy immediately to GitHub Pages
-- **Both:** Get AI-powered content + immediate deployment
+**Phase 1 (40 min) - Build Together:**
+- Everyone follows manual HTML editing
+- Instructor leads, participants follow along
+- Build homepage, about page, projects page
+- ✅ Guaranteed success: Everyone has working portfolio
+
+**Phase 2 (15 min) - Choose Enhancement:**
+- **Track A:** AI-powered content enhancement (for those with AI tools)
+- **Track B:** Manual polish and refinement (for everyone else)
 
 ## Quick Start for Instructors
 
 1. **Review** `workshop-materials/WORKSHOP-DELIVERY-GUIDE.md`
-2. **Prepare** your example portfolio (`my-portfolio/`)
-3. **Package** templates folder as ZIP for Path 1 participants
-4. **Test** all three paths before workshop
-5. **Send** pre-workshop information gathering worksheet to participants
+2. **Prepare** your example portfolio in `instructor-example/`
+3. **Share** repository link with participants before workshop
+4. **Coordinate** with helpers using delivery guide timeline
+5. **Test** setup flow before workshop day
 
 ## Quick Start for Participants
 
-### Everyone Starts Here: Local Development
-1. Download `templates/` folder
-2. Open files in any text editor
-3. Replace placeholders with your information (bring resume!)
-4. Open `index.html` in browser to view
+See `workshop-materials/PARTICIPANT-GUIDE.md` for complete instructions.
 
-### Optional Enhancements
-- **Q Developer users:** Use AI prompts to generate better content
-- **GitHub users:** Work in forked repo and deploy to Pages
+**Quick Setup:**
+1. Clone this repository
+2. Copy `templates/` → `my-portfolio/`
+3. Open `technical-portfolio/` folder in text editor
+4. Follow along with instructor during workshop
 
 ## Key Features
 
@@ -80,12 +82,22 @@ By workshop end, participants will have:
 - [ ] Mobile-responsive design
 - [ ] Knowledge of how to update it
 
-## Post-Workshop Resources
+## Workshop Materials
 
-- Example portfolio: `my-portfolio/`
-- Troubleshooting guide in workshop materials
-- AWS integration opportunities for advanced users
-- Community support links
+### For Participants
+- **PARTICIPANT-GUIDE.md** - Complete before/during/after guide
+- **AI-ENHANCEMENT-GUIDE.md** - Optional AI prompts for Phase 2
+
+### For Instructors & Helpers
+- **WORKSHOP-DELIVERY-GUIDE.md** - Timeline, coordination, troubleshooting
+
+## Post-Workshop
+
+Participants can:
+- Deploy to GitHub Pages (instructions in participant guide)
+- Continue customizing their portfolio
+- Add more projects and content
+- Use AI tools to enhance further
 
 ## Contributing
 

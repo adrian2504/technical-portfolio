@@ -3,162 +3,274 @@
 ## Workshop Overview
 **Duration:** 90 minutes  
 **Goal:** Every participant leaves with a working portfolio (3 pages minimum)  
-**Approach:** Single streamlined path with optional enhancements
+**Approach:** Everyone Together, Then Diverge  
+**Philosophy:** Build together for guaranteed success, then enhance with AI
+
+---
+
+## Workshop Strategy
+
+### Phase 1: Core Building (Everyone Together)
+All participants follow the same manual process to build their portfolio. This ensures:
+- ✅ Everyone achieves baseline success
+- ✅ Everyone learns HTML/CSS fundamentals
+- ✅ Instructor can manage the room effectively
+- ✅ No one gets left behind
+
+### Phase 2: Enhancement (Participant Choice)
+After core portfolio is complete, participants choose:
+- **Track A**: AI-powered content enhancement (for those with AI tools)
+- **Track B**: Manual polish and refinement (for everyone else)
 
 ---
 
 ## Pre-Workshop Requirements
 
 ### Send to Participants 1 Week Before
-**Bring These Items to the Workshop:**
-- [ ] **Resume/CV** (digital copy on laptop)
-- [ ] **3 project descriptions** (any format - notes, slides, etc.)
-- [ ] **Professional links** (LinkedIn, GitHub if you have them)
-- [ ] **Laptop** with text editor and web browser
-- [ ] **Optional:** GitHub account (for deployment)
-- [ ] **Optional:** Amazon Q Developer installed
+Share the PRE-WORKSHOP-CHECKLIST.md with participants. Key items:
+
+**Required:**
+- [ ] Laptop with text editor and web browser
+- [ ] Resume/CV (digital copy)
+- [ ] 3 project descriptions
+- [ ] Professional links (LinkedIn, GitHub if available)
+- [ ] Contact information
+
+**Optional (for AI Enhancement Phase):**
+- [ ] Amazon Q Developer or other AI coding assistant installed
+- [ ] GitHub account (for deployment)
 
 ### For Instructor
-- [ ] Template portfolio ZIP ready for download
-- [ ] Your portfolio open as example
-- [ ] GitHub template repo ready (for optional deployment)
-
----
-
-## Single Workshop Path with Optional Enhancements
-
-### Core Path: Local Development (Everyone Starts Here)
-**What they need:**
-- Text editor (any)
-- Web browser
-- Items from pre-reqs list above
-
-**Enhancement Options:**
-- **Q Developer users:** Can generate content faster
-- **GitHub users:** Can deploy immediately
-- **Both:** Can do AI generation + immediate deployment
+- [ ] Fork/clone repo ready to share
+- [ ] Your instructor-example portfolio open for reference
+- [ ] AI enhancement prompts ready (from Q-PORTFOLIO-PROMPT.md)
+- [ ] Deployment guide ready for wrap-up
 
 ---
 
 ## 90-Minute Workshop Timeline
 
 ### 0:00-0:10 | Introduction & Setup (10 min)
-- Welcome and show YOUR portfolio as example
-- Everyone downloads template ZIP and extracts
-- Open index.html in text editor and browser
-- **Quick poll:** Who has Q Developer? Who has GitHub?
 
-### 0:10-0:50 | Build Core Pages (40 min)
-**Everyone follows same process:**
-1. **Homepage** (15 min) - Replace name, title, summary from resume
-2. **About** (15 min) - Copy career info from resume/CV
-3. **Projects** (10 min) - Add 3 project descriptions
+**Welcome & Overview:**
+- Show YOUR portfolio (instructor-example) as inspiration
+- Explain two-phase approach: "We'll build together, then enhance"
+- Set expectations: "Everyone will have a working portfolio in 40 minutes"
 
-**Enhancement Options During This Time:**
-- **Q Developer users:** Use AI to generate better content
-- **GitHub users:** Work in forked repo instead of local files
+**Setup:**
+```bash
+# Everyone does this together
+1. Fork/clone the repository
+2. Copy templates folder → my-portfolio
+3. Open my-portfolio/index.html in text editor
+4. Open my-portfolio/index.html in browser
+```
 
-### 0:50-0:75 | Polish & Personalize (25 min)
-- Add contact info and links
-- Update colors (optional)
-- Test all pages work
-- **GitHub users:** Commit and enable Pages
-
-### 0:75-0:90 | Wrap-up & Next Steps (15 min)
-- Show deployment options for local users
-- Share resources for continued development
-- Group photo with portfolios!
+**Quick Poll:** "Who has AI coding assistant installed?" (for planning Phase 2)
 
 ---
 
-## Materials Needed
+### 0:10-0:50 | Core Building - Everyone Together (40 min)
 
-### For All Participants
-- **Template ZIP file** (templates folder)
-- **Quick Reference Card:**
-  ```
-  Find & Replace in Your Editor:
-  "Your Name" → [Your actual name]
-  "Your Role" → [Your job title]
-  "your.email@example.com" → [Your email]
-  ```
+**Instructor leads, everyone follows along**
 
-### Optional Enhancement Materials
-- **Q Developer Quick Prompts:**
-  - "Rewrite this project description to be more engaging"
-  - "Generate a professional summary based on my resume"
-  - "Suggest 3 blog post topics for my field"
+#### 0:10-0:25 | Homepage (15 min)
+**File:** `index.html`
 
-- **GitHub Pages 3-Step Deploy:**
-  1. Create new repo named `username.github.io`
-  2. Upload your portfolio files
-  3. Enable Pages in Settings → Pages
+**Replace these items:**
+- Name in `<h1>` and `<div class="logo">`
+- Professional title/role
+- Hero subtitle (your elevator pitch)
+- Hero description (2-3 sentences about you)
+
+**Test:** Refresh browser, see your name and info
+
+#### 0:25-0:40 | About Page (15 min)
+**File:** `about.html`
+
+**Add your content:**
+- Professional summary (from resume)
+- Career timeline (2-3 key roles)
+- Skills section (5-7 key technical skills)
+
+**Test:** Click "About" in navigation, see your background
+
+#### 0:40-0:50 | Projects Page (10 min)
+**File:** `projects.html`
+
+**Add 3 projects:**
+- Project name
+- Description (2-3 sentences)
+- Technologies used (tech tags)
+- GitHub/demo links if available
+
+**Test:** Click "Projects" in navigation, see your work
+
+**✅ CHECKPOINT: Everyone has working 3-page portfolio**
+
+---
+
+### 0:50-0:60 | AI Enhancement Demo (10 min)
+
+**Instructor demonstrates live:**
+
+Show how AI can enhance content using prompts from Q-PORTFOLIO-PROMPT.md:
+
+**Example 1: Improve Project Description**
+```
+"Rewrite this project description to be more engaging and 
+highlight the technical challenges I solved:
+[paste current description]"
+```
+
+**Example 2: Generate Professional Summary**
+```
+"Based on my resume, write a compelling 2-3 sentence 
+professional summary that highlights my unique value:
+[paste resume highlights]"
+```
+
+**Example 3: Create Blog Post Ideas**
+```
+"Suggest 3 blog post topics based on my background in 
+[your field] that would showcase my expertise"
+```
+
+**Explain:** "For the next 15 minutes, you can apply these techniques or continue polishing manually"
+
+---
+
+### 0:60-0:75 | Enhancement Time - Participant Choice (15 min)
+
+#### Track A: AI Enhancement (for AI tool users)
+**Self-guided with instructor support:**
+- Use prompts from demo to improve content
+- Generate better project descriptions
+- Create professional summary
+- Add blog post ideas to blog.html
+- Polish and refine with AI assistance
+
+**Resources:** Q-PORTFOLIO-PROMPT.md for more prompt examples
+
+#### Track B: Manual Polish (for everyone else)
+**Instructor provides guidance:**
+- Add contact information to contact.html
+- Refine project descriptions
+- Add more details to about page
+- Test all navigation links
+- Optional: Customize colors in styles.css
+
+**Both tracks:** Instructor circulates to help both groups
+
+---
+
+### 0:75-0:90 | Deployment & Wrap-up (15 min)
+
+#### Quick Deployment Demo (5 min)
+**For those with GitHub accounts:**
+```
+1. Create repo named username.github.io
+2. Push portfolio files
+3. Enable Pages in Settings → Pages
+4. Live in 2-3 minutes!
+```
+
+**For local users:** Share deployment guide for later
+
+#### Wrap-up (10 min)
+- **Show & Tell:** 2-3 volunteers share their portfolios
+- **Next Steps:** Share resources for continued development
+- **Q&A:** Answer remaining questions
+- **Group Photo:** Everyone with their portfolios!
 
 ---
 
 ## Instructor Management Tips
 
-### Keep Everyone Moving Together
-- **Set 15-minute timers** for each page
-- **"Good enough" mindset** - polish comes later
-- **Help the room, not individuals** - if someone needs 5+ min help, move them to basic template completion
+### Keep Everyone Moving Together (Phase 1)
+- **Use timers:** Set visible 15-minute timers for each page
+- **"Good enough" mindset:** "You can perfect it later, let's move on"
+- **Help the room, not individuals:** If someone needs 5+ min help, get them to basic template and move on
+- **Show your screen:** Live code along with participants
 
-### Handle Mixed Skill Levels
-- **Beginners:** Focus on content replacement only
-- **Q Developer users:** Let them enhance content while others catch up
-- **GitHub users:** They can work in repo but follow same timeline
+### Managing Two Tracks (Phase 2)
+- **Set clear expectations:** "Track A is self-guided, Track B I'll help more"
+- **Check in with Track A:** Quick "How's it going?" every 5 minutes
+- **Support Track B:** More hands-on guidance for manual polishers
+- **Celebrate both:** Both tracks are successful outcomes
 
-### Common 90-Minute Pitfalls to Avoid
+### Common Pitfalls to Avoid
 ❌ Letting people perfect one page too long  
 ✅ "Save perfection for after the workshop"
 
-❌ Troubleshooting individual setups  
-✅ "Let's get you working with the basic template"
+❌ Troubleshooting individual AI issues  
+✅ "Let's get your manual version working first"
 
 ❌ Explaining every HTML/CSS detail  
 ✅ "You can learn the code later, let's get your content in"
 
+❌ Skipping the checkpoint  
+✅ "Everyone should have 3 working pages before we move to enhancements"
+
 ---
 
-## Success Criteria (90 minutes)
+## Success Criteria
 
-### Minimum Success (Everyone)
+### Minimum Success (Everyone - End of Phase 1)
 - [ ] 3 pages with participant's real content
 - [ ] Pages load without errors
+- [ ] Navigation works
 - [ ] Contact information present
-- [ ] Knows how to update it later
 
-### Bonus Achievements
-- [ ] Custom colors applied
-- [ ] GitHub Pages deployed (for GitHub users)
-- [ ] AI-enhanced content (for Q Developer users)
-- [ ] 4-5 pages completed
+### Bonus Achievements (Phase 2)
+- [ ] AI-enhanced content (Track A)
+- [ ] 4-5 pages completed (both tracks)
+- [ ] Custom colors applied (both tracks)
+- [ ] GitHub Pages deployed (optional)
 
 ---
 
-## Post-Workshop Resources
+## Materials Checklist
 
-### Immediate Follow-up Email
+### For Participants
+- [ ] SETUP-GUIDE.md (setup instructions)
+- [ ] PARTICIPANT-HANDOUT.md (two-phase overview)
+- [ ] Access to instructor-example folder (reference)
+- [ ] Access to templates folder (starting point)
+
+### For Instructor
+- [ ] This delivery guide
+- [ ] Q-PORTFOLIO-PROMPT.md (AI enhancement prompts)
+- [ ] Timer/stopwatch
+- [ ] Deployment guide ready
+- [ ] Your portfolio open as example
+
+---
+
+## Post-Workshop Follow-up
+
+### Immediate Email (Same Day)
 - Link to your portfolio as example
-- Deployment guide for local users
-- Q Developer prompts for enhancement
+- Deployment guide for those who didn't deploy
+- AI enhancement prompts for continued improvement
 - Community link for questions
 
-### For Continued Development
+### Resources to Share
 - How to add custom domain
 - Advanced styling tips
-- SEO optimization
+- SEO optimization guide
 - Adding dynamic features
 
 ---
 
 ## Key Messages for Participants
 
-1. **"Content first, design second"** - Your projects matter more than perfect styling
-2. **"Done is better than perfect"** - You can always improve it later
-3. **"This is YOUR portfolio"** - You own it, control it, update it anytime
-4. **"Start simple, add complexity"** - Build on this foundation
+1. **"Everyone builds together first"** - No one gets left behind
+2. **"Working portfolio in 40 minutes"** - Clear, achievable goal
+3. **"AI is enhancement, not requirement"** - Both tracks are successful
+4. **"Done is better than perfect"** - You can improve it later
+5. **"This is YOUR portfolio"** - You own it, control it, update it anytime
 
 ---
 
-*Single path approach keeps everyone together while allowing individual enhancements!*
+*Two-phase approach ensures universal success while offering AI enhancement opportunities!*
