@@ -60,6 +60,11 @@ nav {
     color: #2563eb;
 }
 
+.nav-menu a.active {
+    color: #2563eb;
+    font-weight: 700;
+}
+
 /* Hero section */
 .hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
