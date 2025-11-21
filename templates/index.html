@@ -10,6 +10,11 @@
     <nav>
         <div class="nav-container">
             <div class="logo">Your Name</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -23,7 +28,7 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h1>Hi, I'm <span class="highlight">Kanbo!! </span></h1>
                 <p class="hero-subtitle">Software Developer | Cloud Enthusiast | Problem Solver</p>
                 <p class="hero-description">I build scalable applications and love working with modern technologies to solve real-world problems.</p>
                 <div class="hero-buttons">
@@ -61,6 +66,15 @@
             </div>
         </section>
     </main>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
 
     <footer>
         <div class="container">
