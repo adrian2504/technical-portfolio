@@ -103,7 +103,7 @@
                     
                     <div class="about-sidebar">
                         <div class="profile-image">
-                            <img src="https://via.placeholder.com/300x300" alt="Adrian Dsouza" />
+                            <img src="static/images/adrian-photo.png" alt="Adrian Dsouza" />
                         </div>
                         
                         <div class="tech-stack">
@@ -121,6 +121,20 @@
                                 <span class="tech-item">PostgreSQL</span>
                                 <span class="tech-item">Docker</span>
                                 <span class="tech-item">Kubernetes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="publications">
+                            <h3>Publications & Writing</h3>
+                            <div class="publication-links">
+                                <a href="https://scholar.google.com/citations?user=BNNmjZ0AAAAJ&hl" class="publication-link">
+                                    <span class="pub-icon">📚</span>
+                                    <span class="pub-text">Google Scholar</span>
+                                </a>
+                                <a href="https://medium.com/@adriandsouza2504" class="publication-link">
+                                    <span class="pub-icon">✍️</span>
+                                    <span class="pub-text">Medium Articles</span>
+                                </a>
                             </div>
                         </div>
                         
@@ -457,6 +471,50 @@
             font-size: 0.9rem;
             margin: 0;
             line-height: 1.6;
+        }
+
+        .publications {
+            margin-top: 2rem;
+        }
+
+        .publications h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .publication-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .publication-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: #f8fafc;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #475569;
+            transition: all 0.3s ease;
+            border-left: 3px solid #2563eb;
+        }
+
+        .publication-link:hover {
+            background: #e2e8f0;
+            color: #1e293b;
+            transform: translateX(2px);
+        }
+
+        .pub-icon {
+            font-size: 1.1rem;
+        }
+
+        .pub-text {
+            font-weight: 500;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
