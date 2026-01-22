@@ -21,6 +21,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="profile-btn" onclick="downloadProfile()">Profile</a></li>
             </ul>
         </div>
     </nav>
@@ -161,78 +162,67 @@
                         </div>
                         
                         <div class="skills-visualization">
-                            <h3>Technical Skills</h3>
-                            <div class="skills-container">
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">Python</span>
-                                        <span class="skill-percentage">95%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="95"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">Machine Learning</span>
-                                        <span class="skill-percentage">90%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="90"></div>
+                            <h3>Skills I Use Often</h3>
+                            <p class="skills-note">Technologies and tools I work with regularly in my projects and professional work</p>
+                            <div class="skills-tags-container">
+                                <div class="skill-category">
+                                    <h4>Programming & Frameworks</h4>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag primary">Python</span>
+                                        <span class="skill-tag primary">Java</span>
+                                        <span class="skill-tag primary">JavaScript</span>
+                                        <span class="skill-tag secondary">React</span>
+                                        <span class="skill-tag secondary">Django</span>
+                                        <span class="skill-tag secondary">FastAPI</span>
+                                        <span class="skill-tag secondary">Node.js</span>
                                     </div>
                                 </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">AWS</span>
-                                        <span class="skill-percentage">85%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="85"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">Java</span>
-                                        <span class="skill-percentage">88%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="88"></div>
+                                
+                                <div class="skill-category">
+                                    <h4>AI/ML & Data</h4>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag primary">Machine Learning</span>
+                                        <span class="skill-tag primary">Data Analysis</span>
+                                        <span class="skill-tag secondary">TensorFlow</span>
+                                        <span class="skill-tag secondary">PyTorch</span>
+                                        <span class="skill-tag secondary">Pandas</span>
+                                        <span class="skill-tag secondary">NumPy</span>
+                                        <span class="skill-tag secondary">FAISS</span>
+                                        <span class="skill-tag secondary">RAG</span>
                                     </div>
                                 </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">JavaScript/React</span>
-                                        <span class="skill-percentage">82%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="82"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">Data Analysis</span>
-                                        <span class="skill-percentage">92%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="92"></div>
+                                
+                                <div class="skill-category">
+                                    <h4>Cloud & DevOps</h4>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag primary">AWS</span>
+                                        <span class="skill-tag secondary">Docker</span>
+                                        <span class="skill-tag secondary">Kubernetes</span>
+                                        <span class="skill-tag secondary">CI/CD</span>
+                                        <span class="skill-tag secondary">GitHub Actions</span>
+                                        <span class="skill-tag secondary">Prometheus</span>
                                     </div>
                                 </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">Docker/Kubernetes</span>
-                                        <span class="skill-percentage">78%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="78"></div>
+                                
+                                <div class="skill-category">
+                                    <h4>Databases & Tools</h4>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag secondary">PostgreSQL</span>
+                                        <span class="skill-tag secondary">MongoDB</span>
+                                        <span class="skill-tag secondary">Git</span>
+                                        <span class="skill-tag secondary">Linux</span>
+                                        <span class="skill-tag secondary">Jupyter</span>
                                     </div>
                                 </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span class="skill-name">Research & Writing</span>
-                                        <span class="skill-percentage">94%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" data-width="94"></div>
+                                
+                                <div class="skill-category">
+                                    <h4>Research & Communication</h4>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag primary">Research & Writing</span>
+                                        <span class="skill-tag secondary">Technical Writing</span>
+                                        <span class="skill-tag secondary">Public Speaking</span>
+                                        <span class="skill-tag secondary">Teaching</span>
+                                        <span class="skill-tag secondary">Mentorship</span>
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +383,7 @@
 
         .skills-list li {
             padding: 0.5rem 0;
-            color: #64748b;
+            color: #cbd5e1;
             position: relative;
             padding-left: 1.5rem;
         }
@@ -550,7 +540,8 @@
         .tech-stack h3 {
             font-size: 1.2rem;
             margin-bottom: 1rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .tech-grid {
@@ -560,12 +551,19 @@
         }
 
         .tech-item {
-            background: #e2e8f0;
-            color: #475569;
+            background: rgba(30, 41, 59, 0.8);
+            color: #cbd5e1;
+            border: 1px solid rgba(96, 165, 250, 0.3);
             padding: 0.5rem;
             border-radius: 5px;
             text-align: center;
             font-size: 0.875rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: rgba(96, 165, 250, 0.2);
+            color: #f1f5f9;
         }
 
         .holistic-interests {
@@ -577,11 +575,12 @@
         .holistic-interests h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .holistic-interests p {
-            color: #64748b;
+            color: #cbd5e1;
             margin-bottom: 2rem;
             line-height: 1.7;
         }
@@ -633,7 +632,8 @@
         .awards-recognition h3 {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .awards-grid {
@@ -681,7 +681,8 @@
         .publications h3 {
             font-size: 1.2rem;
             margin-bottom: 1rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .publication-links {
@@ -695,18 +696,21 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.75rem;
-            background: #f8fafc;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(96, 165, 250, 0.3);
             border-radius: 6px;
             text-decoration: none;
-            color: #475569;
+            color: #cbd5e1;
             transition: all 0.3s ease;
-            border-left: 3px solid #2563eb;
+            border-left: 3px solid #60a5fa;
         }
 
         .publication-link:hover {
-            background: #e2e8f0;
-            color: #1e293b;
+            background: rgba(96, 165, 250, 0.2);
+            color: #f1f5f9;
             transform: translateX(2px);
+            border-color: rgba(96, 165, 250, 0.5);
         }
 
         .pub-icon {
@@ -828,80 +832,72 @@
 
         .skills-visualization h3 {
             font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
             color: #f1f5f9;
             text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
-        .skills-container {
+        .skills-note {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .skills-tags-container {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
-        .skill-item {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideInSkill 0.6s ease forwards;
+        .skill-category {
+            animation: fadeInUp 0.6s ease-out;
         }
 
-        .skill-item:nth-child(1) { animation-delay: 0.1s; }
-        .skill-item:nth-child(2) { animation-delay: 0.2s; }
-        .skill-item:nth-child(3) { animation-delay: 0.3s; }
-        .skill-item:nth-child(4) { animation-delay: 0.4s; }
-        .skill-item:nth-child(5) { animation-delay: 0.5s; }
-        .skill-item:nth-child(6) { animation-delay: 0.6s; }
-        .skill-item:nth-child(7) { animation-delay: 0.7s; }
-        .skill-item:nth-child(8) { animation-delay: 0.8s; }
-
-        .skill-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-
-        .skill-name {
-            font-weight: 600;
+        .skill-category h4 {
             color: #cbd5e1;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            text-shadow: 0 0 8px rgba(203, 213, 225, 0.3);
         }
 
-        .skill-percentage {
-            color: #60a5fa;
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-shadow: 0 0 8px rgba(96, 165, 250, 0.3);
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
-        .skill-bar {
-            height: 10px;
+        .skill-tag {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: default;
+            border: 1px solid transparent;
+        }
+
+        .skill-tag.primary {
+            background: linear-gradient(135deg, #60a5fa, #a855f7);
+            color: white;
+            box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+        }
+
+        .skill-tag.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+        }
+
+        .skill-tag.secondary {
             background: rgba(30, 41, 59, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            overflow: hidden;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+            color: #cbd5e1;
+            border: 1px solid rgba(96, 165, 250, 0.3);
         }
 
-        .skill-progress {
-            height: 100%;
-            background: linear-gradient(90deg, #60a5fa, #a855f7, #ec4899);
-            border-radius: 4px;
-            width: 0;
-            animation: fillSkillBar 1.5s ease-in-out forwards;
-            animation-delay: 0.5s;
-            box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
-            position: relative;
-        }
-
-        .skill-progress::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            animation: shimmer 2s infinite;
+        .skill-tag.secondary:hover {
+            background: rgba(96, 165, 250, 0.2);
+            border-color: rgba(96, 165, 250, 0.5);
+            transform: translateY(-1px);
         }
 
         /* Animations */
@@ -1017,16 +1013,19 @@
             toggle.classList.toggle('active');
         }
 
-        // Animate skills bars when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            const skillBars = document.querySelectorAll('.skill-progress');
-            
-            skillBars.forEach(bar => {
-                const width = bar.getAttribute('data-width');
-                bar.style.setProperty('--skill-width', width + '%');
-            });
+        function downloadProfile() {
+            // Replace with your actual profile PDF path
+            const profileUrl = 'static/documents/Adrian-Profile.pdf';
+            const link = document.createElement('a');
+            link.href = profileUrl;
+            link.download = 'Adrian-Profile.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
 
-            // Add hover effects to timeline items
+        // Add hover effects to timeline items
+        document.addEventListener('DOMContentLoaded', function() {
             const timelineItems = document.querySelectorAll('.timeline-item');
             timelineItems.forEach(item => {
                 item.addEventListener('mouseenter', function() {

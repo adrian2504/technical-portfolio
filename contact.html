@@ -21,6 +21,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#" class="profile-btn" onclick="downloadProfile()">Profile</a></li>
             </ul>
         </div>
     </nav>
@@ -146,11 +147,12 @@
         .contact-form h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .contact-info p {
-            color: #64748b;
+            color: #cbd5e1;
             margin-bottom: 2rem;
             line-height: 1.7;
         }
@@ -162,19 +164,28 @@
         .contact-method {
             margin-bottom: 1.5rem;
             padding: 1rem;
-            background: #f8fafc;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(96, 165, 250, 0.3);
             border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            background: rgba(96, 165, 250, 0.1);
+            border-color: rgba(96, 165, 250, 0.5);
         }
 
         .contact-method h3 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .contact-method p {
             margin: 0;
-            color: #64748b;
+            color: #cbd5e1;
         }
 
         .contact-method a {
@@ -187,8 +198,9 @@
         }
 
         .availability h3 {
-            color: #1e293b;
+            color: #f1f5f9;
             margin-bottom: 1rem;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .status-badge {
@@ -202,10 +214,12 @@
         }
 
         .contact-form {
-            background: white;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
 
         .form-group {
@@ -215,15 +229,18 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #1e293b;
+            color: #f1f5f9;
             font-weight: 600;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
             padding: 0.75rem;
-            border: 2px solid #e2e8f0;
+            border: 2px solid rgba(96, 165, 250, 0.3);
+            background: rgba(15, 23, 42, 0.8);
+            color: #f1f5f9;
             border-radius: 5px;
             font-size: 1rem;
             transition: border-color 0.3s;
@@ -232,13 +249,14 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #2563eb;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
         }
 
         .form-note {
             margin-top: 1rem;
             font-size: 0.875rem;
-            color: #64748b;
+            color: #cbd5e1;
             font-style: italic;
         }
 
@@ -260,6 +278,17 @@
             const toggle = document.querySelector('.mobile-menu-toggle');
             navMenu.classList.toggle('active');
             toggle.classList.toggle('active');
+        }
+
+        function downloadProfile() {
+            // Replace with your actual profile PDF path
+            const profileUrl = 'static/documents/Adrian-Profile.pdf';
+            const link = document.createElement('a');
+            link.href = profileUrl;
+            link.download = 'Adrian-Profile.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 </body>

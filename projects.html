@@ -21,6 +21,7 @@
                 <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="profile-btn" onclick="downloadProfile()">Profile</a></li>
             </ul>
         </div>
     </nav>
@@ -39,25 +40,34 @@
                     <div class="project-card-detailed">
                         <div class="project-info">
                             <h3>CampusNest – Student Housing Marketplace</h3>
-                            <p class="project-description">Full-stack marketplace platform with Django, PostgreSQL, AWS RDS, and comprehensive CI/CD pipeline. Built end-to-end listings with in-app messaging, achieving 88% unit test coverage.</p>
+                            <p class="project-description">Full-stack marketplace platform connecting students with housing options through secure messaging and robust search capabilities.</p>
                             
                             <div class="project-details">
-                                <h4>Problem Solved</h4>
-                                <p>Created a comprehensive student housing marketplace to connect students with housing options, featuring secure messaging and robust search capabilities.</p>
+                                <div class="detail-section">
+                                    <h4>🎯 Problem</h4>
+                                    <p>Students struggled to find reliable housing options with limited platforms offering secure communication and comprehensive search features for student-specific needs.</p>
+                                </div>
                                 
-                                <h4>Technical Approach</h4>
-                                <p>Built with Django backend, PostgreSQL database, AWS RDS deployment. Implemented GitHub Actions CI/CD with Black/Flake8 linting, pytest testing, and S3 media storage. Reduced build times by 35% through caching and parallel jobs.</p>
+                                <div class="detail-section">
+                                    <h4>🔧 Approach</h4>
+                                    <p>Built full-stack Django application with PostgreSQL database, AWS RDS deployment, and comprehensive CI/CD pipeline using GitHub Actions with Black/Flake8 linting and pytest testing.</p>
+                                </div>
                                 
-                                <h4>Key Learnings</h4>
-                                <p>Mastered full-stack development, CI/CD best practices, cloud deployment strategies, and test-driven development methodologies.</p>
-                            </div>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">AWS RDS</span>
-                                <span class="tech-tag">GitHub Actions</span>
-                                <span class="tech-tag">Travis CI</span>
+                                <div class="detail-section">
+                                    <h4>📈 Impact</h4>
+                                    <p>Achieved 88% unit test coverage, reduced build times by 35% through caching and parallel jobs, and created scalable platform for student housing marketplace.</p>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h4>⚡ Tech Stack</h4>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Django</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">AWS RDS</span>
+                                        <span class="tech-tag">GitHub Actions</span>
+                                        <span class="tech-tag">Travis CI</span>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="project-links">
@@ -70,26 +80,35 @@
                     <div class="project-card-detailed">
                         <div class="project-info">
                             <h3>Adaptive AI–Human Task Orchestration Platform</h3>
-                            <p class="project-description">Engineered AI-driven workflow platform that automated 75% of task generation using Meta-Llama-3 on RunPod, with RAG implementation using FAISS embeddings for context retrieval.</p>
+                            <p class="project-description">Intelligent workflow platform bridging AI capabilities with human oversight through adaptive task generation and contextual retrieval.</p>
                             
                             <div class="project-details">
-                                <h4>Problem Solved</h4>
-                                <p>Created an intelligent task orchestration system that bridges AI capabilities with human oversight, optimizing workflow efficiency through adaptive task generation.</p>
+                                <div class="detail-section">
+                                    <h4>🎯 Problem</h4>
+                                    <p>Organizations needed intelligent task orchestration that could leverage AI automation while maintaining human oversight and contextual understanding for complex workflows.</p>
+                                </div>
                                 
-                                <h4>Technical Approach</h4>
-                                <p>Leveraged Meta-Llama-3 LLM on RunPod infrastructure, implemented RAG (Retrieval-Augmented Generation) with FAISS vector embeddings for contextual task generation, and built responsive React UI for seamless user interaction.</p>
+                                <div class="detail-section">
+                                    <h4>🔧 Approach</h4>
+                                    <p>Engineered AI-driven platform using Meta-Llama-3 on RunPod infrastructure, implemented RAG with FAISS vector embeddings for context retrieval, and built responsive React UI.</p>
+                                </div>
                                 
-                                <h4>Key Learnings</h4>
-                                <p>Gained expertise in LLM integration, vector databases, RAG architectures, and building production-ready AI applications with modern frontend frameworks.</p>
-                            </div>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">LLM</span>
-                                <span class="tech-tag">RAG</span>
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">Meta-Llama-3</span>
-                                <span class="tech-tag">FAISS</span>
-                                <span class="tech-tag">React</span>
+                                <div class="detail-section">
+                                    <h4>📈 Impact</h4>
+                                    <p>Automated 75% of task generation, significantly improved workflow efficiency, and created seamless AI-human collaboration interface with contextual task understanding.</p>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h4>⚡ Tech Stack</h4>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Meta-Llama-3</span>
+                                        <span class="tech-tag">RAG</span>
+                                        <span class="tech-tag">FAISS</span>
+                                        <span class="tech-tag">FastAPI</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">RunPod</span>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="project-links">
@@ -102,25 +121,35 @@
                     <div class="project-card-detailed">
                         <div class="project-info">
                             <h3>Kubernetes Web App with Comprehensive Monitoring</h3>
-                            <p class="project-description">Architected a To-Do application deployed on AWS EKS with Kubernetes orchestration, implementing rolling updates and comprehensive monitoring with Prometheus, achieving 92% error detection.</p>
+                            <p class="project-description">Production-ready, scalable web application with enterprise-grade monitoring and automated deployments on AWS EKS.</p>
                             
                             <div class="project-details">
-                                <h4>Problem Solved</h4>
-                                <p>Built a production-ready, scalable web application with enterprise-grade monitoring, automated deployments, and high availability through Kubernetes orchestration.</p>
+                                <div class="detail-section">
+                                    <h4>🎯 Problem</h4>
+                                    <p>Need for production-ready, scalable web application with enterprise-grade monitoring, automated deployments, and high availability through container orchestration.</p>
+                                </div>
                                 
-                                <h4>Technical Approach</h4>
-                                <p>Deployed on AWS EKS with Kubernetes orchestration, implemented CI/CD pipelines for rolling updates, integrated Prometheus for monitoring with Slack notifications, and achieved 92% error detection rate.</p>
+                                <div class="detail-section">
+                                    <h4>🔧 Approach</h4>
+                                    <p>Architected To-Do application on AWS EKS with Kubernetes orchestration, implemented CI/CD pipelines for rolling updates, and integrated Prometheus monitoring with Slack notifications.</p>
+                                </div>
                                 
-                                <h4>Key Learnings</h4>
-                                <p>Mastered Kubernetes deployment strategies, cloud-native monitoring solutions, DevOps best practices, and production system reliability engineering.</p>
-                            </div>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">Kubernetes</span>
-                                <span class="tech-tag">AWS EKS</span>
-                                <span class="tech-tag">Prometheus</span>
-                                <span class="tech-tag">CI/CD</span>
-                                <span class="tech-tag">Docker</span>
+                                <div class="detail-section">
+                                    <h4>📈 Impact</h4>
+                                    <p>Achieved 92% error detection rate, implemented zero-downtime deployments, and created robust monitoring system with real-time alerting for production reliability.</p>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h4>⚡ Tech Stack</h4>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Kubernetes</span>
+                                        <span class="tech-tag">AWS EKS</span>
+                                        <span class="tech-tag">Prometheus</span>
+                                        <span class="tech-tag">Docker</span>
+                                        <span class="tech-tag">CI/CD</span>
+                                        <span class="tech-tag">Slack API</span>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="project-links">
@@ -133,25 +162,34 @@
                     <div class="project-card-detailed">
                         <div class="project-info">
                             <h3>Research Publications</h3>
-                            <p class="project-description">Two published research papers: "Real-Time Network Intrusion Detection Using Machine Learning" (IEEE, 2022) and "Meta Optimized AI-Human Task Orchestration" (NYU Meta-Research Symposium, 2025).</p>
+                            <p class="project-description">Peer-reviewed research contributions to cybersecurity and AI-human collaboration domains through rigorous methodology and international publication.</p>
                             
                             <div class="project-details">
-                                <h4>Problem Solved</h4>
-                                <p>Contributed novel methodologies to cybersecurity and AI-human collaboration domains through rigorous research and peer-reviewed publications.</p>
+                                <div class="detail-section">
+                                    <h4>🎯 Problem</h4>
+                                    <p>Need for novel methodologies in real-time network intrusion detection and optimized AI-human task orchestration to advance cybersecurity and collaborative AI systems.</p>
+                                </div>
                                 
-                                <h4>Technical Approach</h4>
-                                <p>Conducted comprehensive literature reviews, designed experimental methodologies, implemented machine learning models for intrusion detection, and developed meta-optimization techniques for AI-human task orchestration.</p>
+                                <div class="detail-section">
+                                    <h4>🔧 Approach</h4>
+                                    <p>Conducted comprehensive literature reviews, designed experimental methodologies, implemented ML models for intrusion detection, and developed meta-optimization techniques for AI-human collaboration.</p>
+                                </div>
                                 
-                                <h4>Key Learnings</h4>
-                                <p>Developed expertise in academic research methodology, technical writing, peer review processes, and presenting complex findings to international audiences.</p>
-                            </div>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Cybersecurity</span>
-                                <span class="tech-tag">Research</span>
-                                <span class="tech-tag">IEEE Publication</span>
-                                <span class="tech-tag">Meta-Optimization</span>
+                                <div class="detail-section">
+                                    <h4>📈 Impact</h4>
+                                    <p>Published in IEEE International Conference (2022) and NYU Meta-Research Symposium (2025), contributing novel approaches to cybersecurity and AI-human collaboration fields.</p>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h4>⚡ Tech Stack</h4>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Machine Learning</span>
+                                        <span class="tech-tag">Cybersecurity</span>
+                                        <span class="tech-tag">Meta-Optimization</span>
+                                        <span class="tech-tag">Research Methodology</span>
+                                        <span class="tech-tag">IEEE Publication</span>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="project-links">
@@ -164,25 +202,34 @@
                     <div class="project-card-detailed">
                         <div class="project-info">
                             <h3>AWS Technical Articles on Medium</h3>
-                            <p class="project-description">Authored comprehensive technical articles on AWS SageMaker and Elastic Beanstalk, providing in-depth guides for ML workflows and application deployment architectures.</p>
+                            <p class="project-description">Comprehensive technical guides empowering developers with practical AWS knowledge for ML workflows and scalable application deployment.</p>
                             
                             <div class="project-details">
-                                <h4>SageMaker Article</h4>
-                                <p>Detailed guide on architecting automated ML workflows: data ingestion with Processing Jobs, Feature Store integration, Automatic Model Tuning, CI/CD with SageMaker Pipelines, and Model Monitor for drift detection.</p>
+                                <div class="detail-section">
+                                    <h4>🎯 Problem</h4>
+                                    <p>Early-stage developers needed practical, comprehensive guides for AWS services, ML workflows, and cost-effective deployment strategies for production applications.</p>
+                                </div>
                                 
-                                <h4>Elastic Beanstalk Article</h4>
-                                <p>End-to-end architecture walkthrough for deploying production-ready applications using EC2, S3, Load Balancer, and SQS. Covered photo-to-metadata pipeline with sub-200ms response times using serverless architecture.</p>
+                                <div class="detail-section">
+                                    <h4>🔧 Approach</h4>
+                                    <p>Authored detailed articles on SageMaker ML workflows (Processing Jobs, Feature Store, Model Tuning) and Elastic Beanstalk architecture (EC2, S3, Load Balancer, SQS integration).</p>
+                                </div>
                                 
-                                <h4>Impact</h4>
-                                <p>Empowered early-stage developers with practical AWS knowledge, covering core services, RESTful routing, and cost optimization strategies for scalable full-stack solutions.</p>
-                            </div>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">AWS SageMaker</span>
-                                <span class="tech-tag">AWS Elastic Beanstalk</span>
-                                <span class="tech-tag">Technical Writing</span>
-                                <span class="tech-tag">ML Workflows</span>
-                                <span class="tech-tag">Cloud Architecture</span>
+                                <div class="detail-section">
+                                    <h4>📈 Impact</h4>
+                                    <p>Provided end-to-end architecture guidance, covered sub-200ms response times with serverless architecture, and empowered developers with cost optimization strategies.</p>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h4>⚡ Tech Stack</h4>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">AWS SageMaker</span>
+                                        <span class="tech-tag">Elastic Beanstalk</span>
+                                        <span class="tech-tag">Technical Writing</span>
+                                        <span class="tech-tag">ML Workflows</span>
+                                        <span class="tech-tag">Cloud Architecture</span>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="project-links">
@@ -243,31 +290,44 @@
         .project-info h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            color: #1e293b;
+            color: #f1f5f9;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .project-description {
-            color: #64748b;
+            color: #cbd5e1;
             margin-bottom: 2rem;
             font-size: 1.1rem;
         }
 
-        .project-details h4 {
-            color: #1e293b;
-            margin: 1.5rem 0 0.5rem;
-            font-size: 1rem;
+        .project-details {
+            margin: 2rem 0;
         }
 
-        .project-details p {
-            color: #64748b;
-            margin-bottom: 1rem;
+        .detail-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-section h4 {
+            color: #f1f5f9;
+            margin: 0 0 0.5rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
+        }
+
+        .detail-section p {
+            color: #cbd5e1;
+            margin-bottom: 0;
             line-height: 1.6;
         }
 
         .project-tech {
             display: flex;
             gap: 0.5rem;
-            margin: 2rem 0;
+            margin: 1rem 0 0;
             flex-wrap: wrap;
         }
 
@@ -298,6 +358,17 @@
             const toggle = document.querySelector('.mobile-menu-toggle');
             navMenu.classList.toggle('active');
             toggle.classList.toggle('active');
+        }
+
+        function downloadProfile() {
+            // Replace with your actual profile PDF path
+            const profileUrl = 'static/documents/Adrian-Profile.pdf';
+            const link = document.createElement('a');
+            link.href = profileUrl;
+            link.download = 'Adrian-Profile.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 </body>

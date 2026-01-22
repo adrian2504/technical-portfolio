@@ -21,6 +21,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="profile-btn" onclick="downloadProfile()">Profile</a></li>
             </ul>
         </div>
     </nav>
@@ -201,7 +202,7 @@
         }
 
         .post-date {
-            color: #64748b;
+            color: #cbd5e1;
         }
 
         .post-category {
@@ -217,17 +218,18 @@
         }
 
         .blog-post h2 a {
-            color: #1e293b;
+            color: #f1f5f9;
             text-decoration: none;
             font-size: 1.5rem;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .blog-post h2 a:hover {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
         .post-excerpt {
-            color: #64748b;
+            color: #cbd5e1;
             line-height: 1.6;
             margin-bottom: 1.5rem;
         }
@@ -240,11 +242,18 @@
         }
 
         .tag {
-            background: #e2e8f0;
-            color: #475569;
+            background: rgba(96, 165, 250, 0.2);
+            color: #cbd5e1;
+            border: 1px solid rgba(96, 165, 250, 0.3);
             padding: 0.25rem 0.75rem;
             border-radius: 15px;
             font-size: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: rgba(96, 165, 250, 0.3);
+            color: #f1f5f9;
         }
 
         .read-more {
@@ -258,10 +267,13 @@
         }
 
         .blog-sidebar {
-            background: #f8fafc;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: 10px;
             height: fit-content;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
 
         .sidebar-section {
@@ -273,9 +285,10 @@
         }
 
         .sidebar-section h3 {
-            color: #1e293b;
+            color: #f1f5f9;
             margin-bottom: 1rem;
             font-size: 1.2rem;
+            text-shadow: 0 0 8px rgba(241, 245, 249, 0.3);
         }
 
         .category-list {
@@ -287,14 +300,15 @@
         }
 
         .category-list a {
-            color: #64748b;
+            color: #cbd5e1;
             text-decoration: none;
             display: flex;
             justify-content: space-between;
+            transition: color 0.3s ease;
         }
 
         .category-list a:hover {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
         .recent-posts {
@@ -306,13 +320,14 @@
         }
 
         .recent-posts a {
-            color: #64748b;
+            color: #cbd5e1;
             text-decoration: none;
             font-size: 0.9rem;
+            transition: color 0.3s ease;
         }
 
         .recent-posts a:hover {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
         .subscribe-form {
@@ -361,6 +376,17 @@
             const toggle = document.querySelector('.mobile-menu-toggle');
             navMenu.classList.toggle('active');
             toggle.classList.toggle('active');
+        }
+
+        function downloadProfile() {
+            // Replace with your actual profile PDF path
+            const profileUrl = 'static/documents/Adrian-Profile.pdf';
+            const link = document.createElement('a');
+            link.href = profileUrl;
+            link.download = 'Adrian-Profile.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 </body>

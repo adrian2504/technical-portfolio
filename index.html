@@ -21,6 +21,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="profile-btn" onclick="downloadProfile()">Profile</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +37,7 @@
                 <p class="hero-description">Teaching Assistant at NYU, Data Analyst at Alta, and AWS All Builders Welcome Grant recipient. I thrive at the intersection of engineering, innovation, and research, with expertise in AI/ML, cloud computing, and scalable system design.</p>
                 <div class="hero-buttons">
                     <a href="projects.html" class="btn btn-primary">View My Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#" class="btn btn-secondary" onclick="downloadProfile()">Download Profile</a>
                 </div>
             </div>
         </section>
@@ -78,6 +79,17 @@
             const toggle = document.querySelector('.mobile-menu-toggle');
             navMenu.classList.toggle('active');
             toggle.classList.toggle('active');
+        }
+
+        function downloadProfile() {
+            // Replace with your actual profile PDF path
+            const profileUrl = 'static/documents/Adrian-Profile.pdf';
+            const link = document.createElement('a');
+            link.href = profileUrl;
+            link.download = 'Adrian-Profile.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 
