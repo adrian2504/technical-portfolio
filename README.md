@@ -240,9 +240,6 @@ The skills and insights gained from this workshop have influenced my approach to
 - **Medium**: [@adriandsouza2504](https://medium.com/@adriandsouza2504)
 - **Google Scholar**: [Publications](https://scholar.google.com/citations?user=BNNmjZ0AAAAJ&hl)
 
-## 📄 License
-
-MIT License - Feel free to use this portfolio as inspiration for your own projects.
 
 ---
 
